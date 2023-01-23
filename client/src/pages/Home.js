@@ -5,7 +5,11 @@ function Home()
 {
     return(
         <DefaultLayout>
-            <h1> This is Home Page</h1>
+            <div className="filter">
+
+            </div>
+
+            .table-analtic
         </DefaultLayout>
 
     )

@@ -1,0 +1,24 @@
+{
+  "name": "money_tracker",
+  "version": "1.0.0",
+  "description": "expense tracker app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crisik96/money_tracker.git"
+  },
+  "author": "Krzysztof Cichosz Bartlomiej Olszewski Szymon Ludwinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crisik96/money_tracker/issues"
+  },
+  "homepage": "https://github.com/Crisik96/money_tracker#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20"
+  }
+}
