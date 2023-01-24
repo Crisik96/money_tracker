@@ -4,25 +4,25 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../resources/authentication.css";
 import axios from "axios";
-import Password from "antd/es/input/Password";
 import Spinner from "../components/Spinner";
 
 function Login() {
   const [loading, setLoading] = useState(false);
+
   const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
-      setLoading(true)
+      setLoading(true);
       const response = await axios.post("/api/users/login", values);
       localStorage.setItem(
-        "Money-Tracker-User",
+        "money-tracker-user",
         JSON.stringify({ ...response.data, password: "" })
       );
-      setLoading(false)
+      setLoading(false);
       message.success("Login successful");
       navigate("/");
     } catch (error) {
-      setLoading(false)
+      setLoading(false);
       message.error("Login failed");
     }
   };
@@ -40,7 +40,7 @@ function Login() {
         <div className="col-md-4">
           <Form layout="vertical" onFinish={onFinish}>
             <h1>Login</h1>
-
+    
 
             <Form.Item label="Email" name="email">
               <Input />

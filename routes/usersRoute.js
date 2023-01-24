@@ -20,13 +20,14 @@ router.post("/login", async function (req, res) {
 });
 
 router.post("/register", async function (req, res) {
-  try {
-    const newuser = new User(req.body);
-    await newuser.save();
-    res.send("User Registered Successfully");
-  } catch (error) {
-    res.status(500).json(error);
-  }
-});
+    try {
+      const newuser = new User(req.body);
+      await newuser.save();
+      res.send('User Registered Successfully')
+    } catch (error) {
+      res.status(500).json(error);
+    }
+  });
 
-module.exports = router;
+
+  module.exports = router;

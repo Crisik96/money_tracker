@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "expense tracker app",
   "main": "index.js",
+  "engines": {
+    "node": "18.13.0",
+    "npm": "8.19.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +22,7 @@
   "homepage": "https://github.com/Crisik96/money_tracker#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "mongoose": "^6.8.4",
     "nodemon": "^2.0.20"
   }
